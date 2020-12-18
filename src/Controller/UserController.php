@@ -6,14 +6,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\Routing\Annotation\Route;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
-
+use Lichtner\FluentPdo; 
 
 
 class UserController extends AbstractController {
 
 
     /**
-     * @Route("/user/list", name="user_list")     
+     * @Route("/user/list", name="user_list", METHOD="POST")     
      * 
      */
     public function list(){
